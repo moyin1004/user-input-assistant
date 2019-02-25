@@ -62,7 +62,7 @@ void Dictionary::getZH(const string &dirname) {
             jieba.CutAll(s, words);
             for(auto it = words.begin(); it != words.end(); ++it){
                 *it = preprocess(*it, "[^\u4e00-\u9fa5]");
-                if ((*it == "\0") | (it->size() < 4)) continue;
+                if ((*it == "\0") | (it->size() < 3)) continue;
                 _ZHdic[*it]++;
             }
         }
@@ -94,7 +94,7 @@ void Dictionary::getEN(const string &filename) {
 }
 
 void Dictionary::store() {
-    fstream fs("../data/ENdic.dat", ios::out); //写入模式，不追加
+    fstream fs("../data/ENDict.dat", ios::out); //写入模式，不追加
     if(!fs) {
         cout << "fstream open error" << endl;
         return ;
@@ -105,7 +105,7 @@ void Dictionary::store() {
     }
     fs.close();
 
-    fs.open("../data/ZHdic.dat", ios::out);
+    fs.open("../data/ZHDict.dat", ios::out);
     if(!fs) {
         cout << "fstream open error" << endl;
         return ;
