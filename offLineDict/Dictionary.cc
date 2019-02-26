@@ -65,8 +65,8 @@ void Dictionary::getZH(const string &dirname) {
         while(getline(ifs, s)){
             jieba.CutAll(s, words);
             for(auto it = words.begin(); it != words.end(); ++it){
-                *it = preprocess(*it, "[^\u4e00-\u9fa5]");
-                if ((*it == "\0") | (it->size() < 3)) continue;
+                //*it = preprocess(*it, "[^\u4e00-\u9fa5]");
+                if (it->size() < 4) continue;
                 _ZHdic[*it]++;
             }
         }
