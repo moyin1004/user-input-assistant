@@ -1,23 +1,27 @@
-INC_DIR:= ./include
-SRC_DIR:= ./src
-LIB_DIR:= ./libs
+INC_DIR:= ./include/
+SRC_DIR:= ./src/
+LIB_DIR:= ./libs/
 
-SRCS:= $(wildcard *.cc)
-OJBS:= $(patsubst %.cc, %.o, $(SRCS))
+SRCS:= $(wildcard $(SRC_DIR)*.cc)
+OBJS:= $(patsubst %.cc, %.o, $(SRCS))
 
 LIBS:= -lpthread -llog4cpp
 
-CXXFLAGS:= -g $(addprefix -I, $(INC_DIR)) $(LIBS)
+CXX:= g++
+CXXFLAGS:= -c -g $(addprefix -I, $(INC_DIR))
 
 EXE:= ./bin/server.out
 
+%.o:%.cc
+	$(CXX) -o $@ $< $(CXXFLAGS)
+
 $(EXE):$(OBJS)
-	$(CC) -o $(EXE) $(OBJS) $(CXXFLAGS)
+	$(CXX) -o $@ $^ $(LIBS)
 
 print:
-	@echo $(OJBS)
+	@echo $(OBJS)
 	@echo $(EXE)
 
 clean:
+	rm $(OBJS)
 	rm $(EXE)
-	rm $(OJBS)
