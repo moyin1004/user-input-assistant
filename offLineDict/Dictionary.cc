@@ -52,6 +52,10 @@ void Dictionary::getZH(const string &dirname) {
         string filename = file->d_name;
         filename = "./中文/" + filename; 
         ifstream ifs(filename);
+        if (!ifs.good()) {
+            cout << "fstream open error" << endl;
+            return ;
+        }
         cout << filename << endl;
     
         cppjieba::Jieba jieba(DICT_PATH, HMM_PATH, USER_DICT_PATH, IDF_PATH, STOP_WORD_PATH);
@@ -72,7 +76,7 @@ void Dictionary::getZH(const string &dirname) {
 
 void Dictionary::getEN(const string &filename) {
     fstream fs(filename);
-    if(!fs) {
+    if(!fs.good()) {
         cout << "fstream open " << filename << " error" << endl;
         return ;
     }
@@ -95,7 +99,7 @@ void Dictionary::getEN(const string &filename) {
 
 void Dictionary::store() {
     fstream fs("../data/ENDict.dat", ios::out); //写入模式，不追加
-    if(!fs) {
+    if(!fs.good()) {
         cout << "fstream open error" << endl;
         return ;
     }
@@ -106,7 +110,7 @@ void Dictionary::store() {
     fs.close();
 
     fs.open("../data/ZHDict.dat", ios::out);
-    if(!fs) {
+    if(!fs.good()) {
         cout << "fstream open error" << endl;
         return ;
     }
