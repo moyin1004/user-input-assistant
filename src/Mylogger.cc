@@ -1,4 +1,4 @@
-/// @file    mylogger.cc
+/// @file    Mylogger.cc
 /// @author  moyin(moyin1004@163.com)
 /// @data    2019-01-12 18:13:32
 
@@ -51,7 +51,6 @@ Mylogger::Mylogger()
     _mylog.setAppender(ostreamAppender);
     _mylog.addAppender(rollingFileAppender);
     _mylog.setPriority(log4cpp::Priority::ERROR);
-
 }
 
 Mylogger::~Mylogger() {
