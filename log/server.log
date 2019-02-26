@@ -1,0 +1,14 @@
+2019-02-26 22:05:49,708 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中文
+.
+2019-02-26 22:05:52,993 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 数学
+.
+2019-02-26 22:05:55,656 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: world
+.
+2019-02-26 22:11:57,648 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: world
+.
+2019-02-26 22:12:00,604 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: query
+.
+2019-02-26 22:12:03,396 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: hello
+.
+2019-02-26 22:12:10,888 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: write
+.
