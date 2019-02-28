@@ -12,3 +12,33 @@
 .
 2019-02-26 22:12:10,888 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: write
 .
+2019-02-28 22:18:00,776 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: hello
+.
+2019-02-28 22:18:09,418 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: world
+.
+2019-02-28 22:18:21,859 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
+.
+2019-02-28 22:30:58,417 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
+.
+2019-02-28 22:34:10,112 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
+.
+2019-02-28 22:40:52,269 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
+.
+2019-02-28 22:42:39,624 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: hello
+.
+2019-02-28 22:42:46,780 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: shell
+.
+2019-02-28 22:45:57,344 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: shell
+.
+2019-02-28 22:48:43,927 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: shell
+.
+2019-02-28 22:48:51,880 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
+.
+2019-02-28 22:55:21,218 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: hello
+.
+2019-02-28 22:55:25,266 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: shell
+.
+2019-02-28 22:55:31,078 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
+.
+2019-02-28 22:55:36,220 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: world
+.

@@ -4,6 +4,7 @@
  
 #include "MyDict.h"
 #include "Mylogger.h"
+#include "EditDistance.h"
 #include "Configuration.h"
 #include <stdlib.h>
 #include <iostream>
@@ -84,7 +85,15 @@ void MyDict::readFrom(const string dictpath) {
 void MyDict::recordToIndex(int index) {
     string key;
     string word = _dict[index].first;
-    for (size_t i = 0; i != word.size(); ++i) {
+    for (size_t i = 0; i != word.size();) {
+        char ch = word[i];
+        size_t nBytes = nBytesCode(ch);
+        string key = word.substr(i, nBytes);
+        i += nBytes;
+        _indexTable[key].insert(index);
+    }
+#if 0
+    for (size_t i = 0; i != word.size();) {
         char ch = word[i];
         if (ch & (1 << 7)) { //判断是否是ASCII的字母
             //提取utf8编码的中文单个汉字
@@ -125,6 +134,7 @@ void MyDict::recordToIndex(int index) {
         //logDebug("indexTable key = %s", key.c_str());
         _indexTable[key].insert(index);
     } //end of for
+#endif
 }
 
 } //end of namespace wd

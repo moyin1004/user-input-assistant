@@ -1,20 +1,19 @@
- ///
- /// @file    EditDistance.h
- /// @author  lemon(haohb13@gmail.com)
- /// @date    2016-04-01 10:51:43
- ///
+/// @file    EditDistance.h
+/// @author  moyin(moyin1004@163.com)
+/// @data    2019-02-28 19:40:29
  
-#ifndef __MY_EDIT_DISTANCE_H_
-#define __MY_EDIT_DISTANCE_H_
+#ifndef __WD_EDITDISTANCE_H__
+#define __WD_EDITDISTANCE_H__
+    
 #include <iostream>
 #include <string>
 
-size_t nBytesCode(const char ch);
+namespace wd {
 
-std::size_t length(const std::string &str);
+size_t nBytesCode(const char ch); //获取字节高位开头为1的个数
 
-int tripleMin(const int &a, const int &b, const int &c);
+int editDistance(const std::string &lhs, const std::string &rhs);
 
-int editDistance(const std::string & lhs, const std::string &rhs);
+} //end of namesapce
 
 #endif

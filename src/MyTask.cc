@@ -65,7 +65,6 @@ void MyTask::response() {
 void MyTask::queryIndexTable() {
     auto indexTable = MyDict::getInstance()->getIndexTable();
     string ch;
-    //MyDict::getInstance()->showIndexTable();
 
     for (size_t i = 0; i != _request.size();) {
         size_t nBytes = nBytesCode(_request[i]);
@@ -105,7 +104,7 @@ void MyTask::statistic(set<int> & statisticSet) {
 }
 
 int MyTask::distance(const string & rhsWord) {
-    return ::editDistance(_request, rhsWord);
+    return editDistance(_request, rhsWord);
 }
 
 } //end of namespace wd
