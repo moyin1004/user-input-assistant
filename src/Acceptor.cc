@@ -10,12 +10,16 @@ namespace wd {
 Acceptor::Acceptor(const std::string &ip, unsigned short port) 
 : _sock()
 , _addr(ip, port)
-{}
+{
+    _sock.nonblock(); //防止accept阻塞
+}
 
 Acceptor::Acceptor(unsigned short port)
 : _sock()
 , _addr(port)
-{}
+{
+    _sock.nonblock();
+}
 
 void Acceptor::ready() {
     setReuseAddr();
