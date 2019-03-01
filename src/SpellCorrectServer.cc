@@ -51,7 +51,7 @@ void SpellCorrectServer::onConnection(const shared_ptr<TcpConnection> &connectio
 
 void SpellCorrectServer::onMessage(const shared_ptr<TcpConnection> &connection) {
     string msg = connection->receive();
-    logInfo("server receive: %s.", msg.c_str());
+    logInfo("server receive: %s", msg.c_str());
     
     string data;
     int pos = msg.find('\n');

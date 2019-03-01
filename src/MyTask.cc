@@ -8,6 +8,7 @@
 #include "Thread.h"
 #include "EditDistance.h"
 #include "MyDict.h"
+#include <string.h>
 #include <iostream>
  
 using std::cout;
@@ -21,7 +22,9 @@ namespace wd {
 MyTask::MyTask(const string & request, shared_ptr<TcpConnection> conn)
 : _request(request)
 , _connection(conn)
-{}
+{
+    memset(_bitmap, 0, sizeof(_bitmap));
+}
 
 void MyTask::process() {
     //从cache里查找
@@ -82,13 +85,12 @@ void MyTask::queryIndexTable() {
 void MyTask::statistic(set<int> & statisticSet) {
     auto dict = MyDict::getInstance()->getDict();
     auto it = statisticSet.begin();
-    char bitmap[7000]; //词典大概一共50000多词 7000*8 = 56000
     for(; it != statisticSet.end(); ++it) {
         string rhsWord = dict[*it].first;
         int byteIndex = *it / 8;
         int bitIndex = *it % 8;
-        if (bitmap[byteIndex] & 1 << (7 - bitIndex)) continue;
-        else bitmap[byteIndex] |= 1 << (7 - bitIndex);
+        if (_bitmap[byteIndex] & 1 << (7 - bitIndex)) continue;
+        else _bitmap[byteIndex] |= 1 << (7 - bitIndex);
         //logDebug("word: %s.", rhsWord.c_str());
         int idist = distance(rhsWord);  //进行最小编辑距离的计算
         //logDebug("mindist = %d", idist);

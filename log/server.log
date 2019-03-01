@@ -1,44 +1,35 @@
-2019-02-26 22:05:49,708 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中文
-.
-2019-02-26 22:05:52,993 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 数学
-.
-2019-02-26 22:05:55,656 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: world
-.
-2019-02-26 22:11:57,648 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: world
-.
-2019-02-26 22:12:00,604 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: query
-.
-2019-02-26 22:12:03,396 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: hello
-.
-2019-02-26 22:12:10,888 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: write
-.
-2019-02-28 22:18:00,776 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: hello
-.
-2019-02-28 22:18:09,418 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: world
-.
-2019-02-28 22:18:21,859 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
-.
-2019-02-28 22:30:58,417 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
-.
-2019-02-28 22:34:10,112 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
-.
-2019-02-28 22:40:52,269 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
-.
-2019-02-28 22:42:39,624 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: hello
-.
-2019-02-28 22:42:46,780 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: shell
-.
-2019-02-28 22:45:57,344 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: shell
-.
-2019-02-28 22:48:43,927 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: shell
-.
-2019-02-28 22:48:51,880 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
-.
-2019-02-28 22:55:21,218 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: hello
-.
-2019-02-28 22:55:25,266 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: shell
-.
-2019-02-28 22:55:31,078 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: 中国
-.
-2019-02-28 22:55:36,220 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: world
-.
+2019-03-01 13:20:18,565 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 42482.
+2019-03-01 13:20:18,565 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 42822.
+2019-03-01 13:20:18,565 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 43364.
+2019-03-01 13:20:18,566 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 43385.
+2019-03-01 13:20:18,566 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 43386.
+2019-03-01 13:20:18,566 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 43387.
+2019-03-01 13:20:18,567 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 43388.
+2019-03-01 13:20:18,567 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 44253.
+2019-03-01 13:20:18,567 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 44751.
+2019-03-01 13:20:18,567 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 45087.
+2019-03-01 13:20:18,567 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 45473.
+2019-03-01 13:20:18,568 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 45475.
+2019-03-01 13:20:18,568 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 45701.
+2019-03-01 13:20:18,568 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 45930.
+2019-03-01 13:20:18,568 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 45931.
+2019-03-01 13:20:18,569 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 45950.
+2019-03-01 13:20:18,569 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 45951.
+2019-03-01 13:20:18,569 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 46524.
+2019-03-01 13:20:18,569 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 46567.
+2019-03-01 13:20:18,569 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 46568.
+2019-03-01 13:20:18,570 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 46581.
+2019-03-01 13:20:18,570 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 46678.
+2019-03-01 13:20:18,570 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 46765.
+2019-03-01 13:20:18,570 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 47607.
+2019-03-01 13:20:18,570 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 47926.
+2019-03-01 13:20:18,570 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 48489.
+2019-03-01 13:20:18,570 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 48510.
+2019-03-01 13:20:18,571 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 49060.
+2019-03-01 13:20:18,571 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 49061.
+2019-03-01 13:20:18,571 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 50290.
+2019-03-01 13:20:18,571 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 50409.
+2019-03-01 13:20:18,571 mylog [DEBUG] [src/MyTask.cc , statistic , 90] num: 50743.
+2019-03-01 13:20:22,006 mylog [DEBUG] [src/Socket.cc , ~Socket , 30] Socket::~Socket()
+2019-03-01 13:22:28,788 mylog [INFO] [src/SpellCorrectServer.cc , onMessage , 54] server receive: world
+

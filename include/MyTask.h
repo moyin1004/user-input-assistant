@@ -50,6 +50,7 @@ private:
     std::string _request;
     std::shared_ptr<TcpConnection> _connection;
     std::priority_queue<MyResult, std::vector<MyResult>, MyCompare> _resultQue;
+    char _bitmap[7000]; //词典大概一共50000多词 7000*8 = 56000
 };
 
 } //end of namespace wd
