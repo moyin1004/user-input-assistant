@@ -5,7 +5,6 @@
 #ifndef __TCPSERVER_H__
 #define __TCPSERVER_H__
     
-#include "Threadpool.h"
 #include "Acceptor.h"
 #include "EventLoop.h"
 
@@ -26,7 +25,6 @@ public:
 private:
     Acceptor _acceptor;
     EventLoop _eventloop;
-    Threadpool _thredpool;
 };
 
 } //end of namespace wd

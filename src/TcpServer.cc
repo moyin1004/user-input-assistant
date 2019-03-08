@@ -11,7 +11,6 @@ namespace wd {
 TcpServer::TcpServer(const string &ip, unsigned short port)
 : _acceptor(ip, port)
 , _eventloop(_acceptor)
-, _thredpool()
 {}
 
 void TcpServer::start() {
